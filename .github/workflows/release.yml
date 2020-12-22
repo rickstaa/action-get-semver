@@ -1,4 +1,4 @@
-name: Release action
+name: Release
 on:
   push:
     # Use push on master event to run workflow instead of pull_request

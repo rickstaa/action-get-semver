@@ -6,8 +6,8 @@ version.
 [![Action test](https://github.com/rickstaa/action-get-semver/workflows/Action%20test/badge.svg)](https://github.com/rickstaa/action-get-semver/actions?query=workflow%3A%22Action+test%22)
 [![Depup](https://github.com/rickstaa/action-get-semver/workflows/Depup/badge.svg)](https://github.com/rickstaa/action-get-semver/actions?query=workflow%3ADepup)
 [![Release](https://github.com/rickstaa/action-get-semver/workflows/Release/badge.svg)](https://github.com/rickstaa/action-get-semver/actions?query=workflow%3ARelease)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/rickstaa/action-bumpr?logo=github&sort=semver)](https://github.com/rickstaa/action-get-semver/releases)
 [![Docker Image CI](https://github.com/rickstaa/action-get-semver/workflows/Docker%20Image%20CI/badge.svg)](https://github.com/rickstaa/action-get-semver/actions?query=workflow%3A%22Docker+Image+CI%22)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/rickstaa/action-get-semver?logo=github&sort=semver)](https://github.com/rickstaa/action-get-semver/releases)
 
 ## Input
 

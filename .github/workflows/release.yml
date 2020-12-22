@@ -5,7 +5,7 @@ on:
     # closed (merged) event because github token doesn't have write permission
     # for pull_request from fork repository.
     branches:
-      - master
+      - main
     tags:
       - 'v*.*.*'
   pull_request:

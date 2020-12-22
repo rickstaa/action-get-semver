@@ -1,0 +1,20 @@
+name: "Get Semver"
+description: "Get current/next major, minor, and patch version based on the given semver version."
+author: "Rick Staa"
+inputs:
+  bump_level:
+    description: "Version bump level [major,minor,patch]."
+    required: False
+    default: "patch"
+outputs:
+  current_version:
+    description: "The current version."
+  next_version:
+    description: "The next major version."
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "corner-right-up"
+  color: "gray-dark"

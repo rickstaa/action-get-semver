@@ -16,5 +16,5 @@ runs:
   image: "Dockerfile"
 
 branding:
-  icon: "corner-right-up"
+  icon: "bookmark"
   color: "gray-dark"

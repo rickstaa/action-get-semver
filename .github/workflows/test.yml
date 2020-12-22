@@ -12,3 +12,7 @@ jobs:
       - name: Test action
         uses: ./
         id: Test
+      - name: Print current and next version
+        run: |
+          echo "Current version: ${{ steps.get_semver.outputs.current_version  }}"
+          echo "Next version: ${{ steps.get_semver.outputs.next_version }}"

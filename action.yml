@@ -3,7 +3,7 @@ description: "Get current/next major, minor, and patch version based on the give
 author: "Rick Staa"
 inputs:
   bump_level:
-    description: "Version bump level [major,minor,patch]."
+    description: "Version bump level [major, minor, patch]."
     required: False
     default: "patch"
 outputs:

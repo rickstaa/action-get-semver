@@ -14,7 +14,7 @@ version.
 ```yaml
 inputs:
   bump_level:
-    description: "Version bump level [major,minor,patch]."
+    description: "Version bump level [major, minor, patch]."
     required: False
     default: "patch"
 outputs:

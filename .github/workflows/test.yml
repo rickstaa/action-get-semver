@@ -10,8 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Test action
+        id: get_semver
         uses: ./
-        id: Test
       - name: Print current and next version
         run: |
           echo "Current version: ${{ steps.get_semver.outputs.current_version  }}"

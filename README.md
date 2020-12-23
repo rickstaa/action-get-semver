@@ -38,8 +38,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: rickstaa/action-get-semver@v1
-        with:
-
       - name: Print semver
         id: get_semver
         with:

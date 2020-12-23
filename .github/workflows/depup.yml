@@ -13,7 +13,7 @@ jobs:
       - uses: reviewdog/action-depup@v1
         id: depup
         with:
-          file: src/index.js
+          file: Dockerfile
           version_name: BUMP_VERSION
           repo: haya14busa/bump
 

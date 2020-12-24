@@ -5,7 +5,7 @@ if [ -n "${GITHUB_WORKSPACE}" ]; then
   cd "${GITHUB_WORKSPACE}" || exit
 fi
 
-input_bump_level="$(echo $INPUT_BUMP_LEVEL | tr '[:upper:]' '[:lower:]')" # Make lowercase
+input_bump_level="$(echo ${INPUT_BUMP_LEVEL} | tr '[:upper:]' '[:lower:]')" # Make lowercase
 case $input_bump_level in
   "major"|"minor"|"patch")
     ;;

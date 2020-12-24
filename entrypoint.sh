@@ -15,9 +15,6 @@ case $input_bump_level in
     ;;
 esac
 
-git fetch --tags # Fetch existing tags before bump.
-# Fetch history as well because bump uses git history (git tag --merged).
-git fetch --prune --unshallow
 CURRENT_VERSION="$(bump current)" || true
 NEXT_VERSION="$(bump ${input_bump_level})" || true
 

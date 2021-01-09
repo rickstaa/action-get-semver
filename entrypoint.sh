@@ -38,5 +38,9 @@ if [ -z "${NEXT_VERSION}" ]; then
   exit 1
 fi
 
+if [ "${INPUT_VERBOSE}" == "true" ]; then
+	echo "current_version: ${CURRENT_VERSION}"
+	echo "next_version: ${NEXT_VERSION}"
+fi
 echo "::set-output name=current_version::${CURRENT_VERSION}"
 echo "::set-output name=next_version::${NEXT_VERSION}"

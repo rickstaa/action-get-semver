@@ -17,6 +17,10 @@ inputs:
     description: "Version bump level [major, minor, patch]."
     required: False
     default: "patch"
+  verbose:
+    description: "Print current and next version."
+    required: False
+    default: "false"
 outputs:
   current_version:
     description: "The current version."

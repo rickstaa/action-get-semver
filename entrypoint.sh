@@ -39,8 +39,8 @@ if [ -z "${NEXT_VERSION}" ]; then
 fi
 
 if [ "${INPUT_VERBOSE}" == "true" ]; then
-	echo "current_version: ${CURRENT_VERSION}"
-	echo "next_version: ${NEXT_VERSION}"
+	echo "[action-get-semver] Current_version: ${CURRENT_VERSION}"
+	echo "[action-get-semver] Next_version: ${NEXT_VERSION}"
 fi
 echo "::set-output name=current_version::${CURRENT_VERSION}"
 echo "::set-output name=next_version::${NEXT_VERSION}"

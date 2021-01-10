@@ -10,11 +10,17 @@ inputs:
     description: "Print current and next version."
     required: False
     default: "false"
+  frail:
+    description: "Return exit code of 1 when no version tag is found."
+    required: False
+    default: "false"
 outputs:
   current_version:
     description: "The current version."
   next_version:
     description: "The next major version."
+  error:
+    descriptor: Wether an error was encountered.
 runs:
   using: "docker"
   image: "Dockerfile"

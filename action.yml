@@ -13,7 +13,7 @@ inputs:
   frail:
     description: "Return exit code of 1 when no version tag is found."
     required: False
-    default: "false"
+    default: "true"
 outputs:
   current_version:
     description: "The current version."

@@ -20,7 +20,7 @@ outputs:
   next_version:
     description: "The next major version."
   error:
-    descriptor: Wether an error was encountered.
+    description: Wether an error was encountered.
 runs:
   using: "docker"
   image: "Dockerfile"

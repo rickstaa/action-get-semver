@@ -12,6 +12,8 @@ jobs:
       - name: Test action
         id: get_semver
         uses: ./
+        with:
+          frail: false
       - name: Print current and next version
         run: |
           echo "Current version: ${{ steps.get_semver.outputs.current_version  }}"

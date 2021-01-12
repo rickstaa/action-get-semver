@@ -25,7 +25,6 @@ inputs:
     description: "Return exit code of 1 when no version tag is found."
     required: False
     default: "false"
-
 ```
 
 ## Outputs

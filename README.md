@@ -9,7 +9,7 @@ version.
 [![Docker Image CI](https://github.com/rickstaa/action-get-semver/workflows/Docker%20Image%20CI/badge.svg)](https://github.com/rickstaa/action-get-semver/actions?query=workflow%3A%22Docker+Image+CI%22)
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/rickstaa/action-get-semver?logo=github&sort=semver)](https://github.com/rickstaa/action-get-semver/releases)
 
-## Input
+## Input/Outputs
 
 ```yaml
 inputs:

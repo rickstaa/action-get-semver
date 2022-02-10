@@ -46,21 +46,26 @@ name: release
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   check-version:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - uses: rickstaa/action-get-semver@v1
-      - name: Print semver
         id: get_semver
         with:
           bump_level: "minor"
+      - name: Print current and next version
         run: |
           echo "Current version: ${{ steps.get_semver.outputs.current_version  }}"
           echo "Next version: ${{ steps.get_semver.outputs.next_version }}"
 ```
+
+❗ **NOTE:** This action requires the `fetch-depth: 0` argument to be set in the [actions/checkout@v2](https://github.com/actions/checkout) step (see [actions/checkout#fetch-all-history-for-all-tags-and-branches
+](https://github.com/actions/checkout#fetch-all-history-for-all-tags-and-branches)).
 
 ### Acknowledgement
 

@@ -64,7 +64,7 @@ jobs:
           echo "Next version: ${{ steps.get_semver.outputs.next_version }}"
 ```
 
-❗ **NOTE:** This action requires the `fetch-depth: 0` argument to be set in the [actions/checkout@v2](https://github.com/actions/checkout) step (see [actions/checkout#fetch-all-history-for-all-tags-and-branches
+❗ **NOTE:** This action requires the `fetch-depth: 0` argument to be set in the [actions/checkout@v3](https://github.com/actions/checkout) step (see [actions/checkout#fetch-all-history-for-all-tags-and-branches
 ](https://github.com/actions/checkout#fetch-all-history-for-all-tags-and-branches)).
 
 ### Acknowledgement

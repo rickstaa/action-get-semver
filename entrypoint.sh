@@ -1,6 +1,9 @@
 #!/bin/sh
 set -e
 
+# Apply hotfix for 'fatal: unsafe repository' error (see #14)
+git config --global --add safe.directory "${GITHUB_WORKSPACE}"
+
 if [ -n "${GITHUB_WORKSPACE}" ]; then
   cd "${GITHUB_WORKSPACE}" || exit
 fi
@@ -8,7 +11,7 @@ fi
 input_bump_level="$(echo ${INPUT_BUMP_LEVEL:-patch} | tr '[:upper:]' '[:lower:]')" # Make lowercase
 case $input_bump_level in
   "major" | "minor" | "patch") ;;
-  
+
   *)
     printf '%s\n' "[action-get-semver] Please specify a valid bump level \`${input_bump_level}\` is not valid [major, minor, patch]."
     exit 1
@@ -24,7 +27,7 @@ if [[ -z "${CURRENT_VERSION}" ]]; then
   if [[ "${INPUT_FRAIL}" = 'true' ]]; then
     exit 1
   fi
-  
+
   # Create current and next tag
   CURRENT_VERSION="v0.0.0"
   case "${input_bump_level}" in

@@ -67,6 +67,10 @@ jobs:
 ❗ **NOTE:** This action requires the `fetch-depth: 0` argument to be set in the [actions/checkout@v3](https://github.com/actions/checkout) step (see [actions/checkout#fetch-all-history-for-all-tags-and-branches
 ](https://github.com/actions/checkout#fetch-all-history-for-all-tags-and-branches)).
 
+## Contributing
+
+Feel free to open an issue if you have ideas on how to make this GitHub action better or if you want to report a bug! All contributions are welcome. :rocket: Please consult the [contribution guideliness](CONTRIBUTING.md) for more information.
+
 ### Acknowledgement
 
 This action serves as a wrapper around the [bump](https://github.com/haya14busa/bump) package of [@haya14busa](https://github.com/haya14busa/bump/commits?author=haya14busa).

@@ -23,7 +23,7 @@ NEXT_VERSION="$(bump ${input_bump_level})" || true
 
 if [[ -z "${CURRENT_VERSION}" ]]; then
   echo "[action-get-semver] Current version tag not found."
-  echo "::set-output name=error::true"
+  echo "error=true" >> "${GITHUB_OUTPUT}"
   if [[ "${INPUT_FRAIL}" = 'true' ]]; then
     exit 1
   fi
@@ -42,7 +42,7 @@ if [[ -z "${CURRENT_VERSION}" ]]; then
     ;;
   esac
 else
-  echo "::set-output name=error::false"
+  echo "error=false" >> "${GITHUB_OUTPUT}"
 fi
 
 if [ -z "${NEXT_VERSION}" ]; then
@@ -54,5 +54,5 @@ if [ "${INPUT_VERBOSE}" == "true" ]; then
   echo "[action-get-semver] Current_version: ${CURRENT_VERSION}"
   echo "[action-get-semver] Next_version: ${NEXT_VERSION}"
 fi
-echo "::set-output name=current_version::${CURRENT_VERSION}"
-echo "::set-output name=next_version::${NEXT_VERSION}"
+echo "current_version=${CURRENT_VERSION}" >> "${GITHUB_OUTPUT}"
+echo "next_version=${NEXT_VERSION}" >> "${GITHUB_OUTPUT}"

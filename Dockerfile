@@ -1,4 +1,4 @@
-FROM alpine:3.19
+FROM alpine:3.22
 
 ENV BUMP_VERSION=v1.1.0
 
